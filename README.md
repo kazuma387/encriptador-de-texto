@@ -29,13 +29,13 @@ Puedes probar la aplicación en vivo [aquí](https://kazuma387.github.io/encript
 *Pantalla principal del Encriptador de Texto*
 
 ![Resultado de Encriptación](screenshots/encriptador-resultado.png)
-*Ejemplo de un texto encriptado*
+*Ejemplo de un texto desencriptado*
 
 ![Versión Tablet](screenshots/encriptador-tablet.png)
-*Vista de la aplicación en una tablet*
+*Vista de la aplicación en dispositivos móviles (Tablet)*
 
 ![Versión Móvil](screenshots/encriptador-movil.png)
-*Vista de la aplicación en dispositivos móviles*
+*Vista de la aplicación en dispositivos móviles (smartphone)*
 
 ## 🔧 Instalación y Uso
 
