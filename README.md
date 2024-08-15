@@ -25,7 +25,17 @@ Puedes probar la aplicación en vivo [aquí](https://kazuma387.github.io/encript
 
 ## 📸 Capturas de Pantalla
 
-[Aquí puedes insertar algunas capturas de pantalla de tu aplicación]
+![Pantalla Principal](screenshots/encriptador-pantalla-principal.png)
+*Pantalla principal del Encriptador de Texto*
+
+![Resultado de Encriptación](screenshots/encriptador-resultado.png)
+*Ejemplo de un texto encriptado*
+
+![Versión Tablet](screenshots/encriptador-tablet.png)
+*Vista de la aplicación en una tablet*
+
+![Versión Móvil](screenshots/encriptador-movil.png)
+*Vista de la aplicación en dispositivos móviles*
 
 ## 🔧 Instalación y Uso
 
