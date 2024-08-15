@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Ecriptador de Texto</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="https://kazuma387.github.io/encriptador-de-texto/assets/icono.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://kazuma387.github.io/encriptador-de-texto/assets/desencriptar.png">
+    <meta name="description" content="Hola bienvenido a mi Encriptador de Texto, soy Daniel Rios, Desarrollador Web">
+    <link rel="canonical" href="https://kazuma387.github.io/encriptador-de-texto">
+    <link rel="favicon" href="https://kazuma387.github.io/encriptador-de-texto/assets/desencriptador.png">
+    <meta name="theme-color" content="#0883c9">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:type" content="website">
+    <meta property="og:title" name="twitter:title" content="Encriptador de Texto - Daniel Rios">
+    <meta property="og:description" name="twitter:description"
+        content="Hola bienvenido a mi Encriptador de Texto, soy Daniel Rios, Desarrollador Web">
+    <meta property="og:image" name="twitter:image"
+        content="https://kazuma387.github.io/encriptador-de-texto/assets/desencriptador.png">
+    <meta property="og:url" name="twitter:url" content="https://kazuma387.github.io/encriptador-de-texto">
+</head>
+<body>
+
+<div class="main-container">
+    <header>
+        <div class="container-header">
+            <div class="container-img">
+                <img src="assets/image.png" alt="encriptado de texto">
+            </div>
+            
+            <div class="container-title">
+                <h1>Encriptador de texto</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="text-intro">
+            
+                <textarea class="text-input" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="paragraph-span">
+                    <span class="material-symbols-outlined">
+                            error
+                        </span>
+                        <p> 
+                            Solo letras minúsculas y sin acentos
+                        </p>
+                </div>
+            
+
+            <div class="btn-text-input">
+                <Button class="btn-encriptar" class="encriptar">
+                    Encriptar!
+                </Button>
+                <Button class="btn-desencriptar" class="desencriptar">
+                    Desencriptar!
+                </Button>
+            </div>
+        </section>
+
+        <section class="container-area-result">
+            <div class="area-result">
+                <img class="img img-result" src="assets/desencriptar.png" alt="imagen de un candado">
+                <h4 class="text-result">Ningún mensaje fue encontrado</h4>
+                <textarea class="result" placeholder="Ingrese el texto que desees encriptar o desencriptar." readonly></textarea>
+                <Button class="hidden btn-copy">Copiar</Button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Copyright: Daniel Orlando Rios Rodríguez</p>
+    </footer>
+</div>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
