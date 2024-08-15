@@ -229,6 +229,12 @@ footer {
     width: 100vw
 }
 
+footer a {
+    color: var(--text-color-secundary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px){
     body {
