@@ -74,7 +74,7 @@ encriptarBtn.addEventListener('click', () => {
         alert('Ingrese el texto que desea encriptar')
         return;
     }else if (!/^[a-z\s]*$/.test(texto)) {
-        alert('Solo se permiten letras minúsculas sin acentos.');
+        alert('Solo se permiten letras minúsculas y espacios. No se deben utilizar letras con acentos ni caracteres especiales.');
         return;
     }
     limpiarCaja()
@@ -90,7 +90,7 @@ desencriptarBtn.addEventListener('click', () => {
         alert('Ingrese el texto que desea desencriptar')
         return;
     }else if (!/^[a-z\s]*$/.test(texto)) {
-        alert('Solo se permiten letras minúsculas sin acentos.');
+        alert('Solo se permiten letras minúsculas y espacios. No se deben utilizar letras con acentos ni caracteres especiales.');
         return;
     }
     limpiarCaja()

@@ -229,10 +229,30 @@ footer {
     width: 100vw
 }
 
-footer a {
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre el texto y los iconos */
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; /* Espacio entre los iconos */
+}
+
+.social-icons a {
     color: var(--text-color-secundary);
+    font-size: 24px;
     text-decoration: none;
-    cursor: pointer;
+}
+
+.social-icons a:hover {
+    color: var(--text-color-primary);
 }
 
 /* MEDIA QUERIES */
