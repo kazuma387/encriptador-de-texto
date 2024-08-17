@@ -125,6 +125,7 @@ main {
     font-family: var(--fuente-krona);
     cursor: pointer;
     font-size: clamp(14px, 1.5vw, 16px);
+    font-weight: 700;
     transition: background-color 0.3s, transform 0.1s;
 }
 
