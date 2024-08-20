@@ -100,7 +100,6 @@ main {
     font-size: 18px;
     font-weight: 700;
     resize: none;
-    text-transform: lowercase;
 }
 
 .text-input:focus {
