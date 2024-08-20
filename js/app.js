@@ -67,9 +67,30 @@ function alinearTextStart() {
     }
 }
 
-// Creando Eventos
+// Funcion para eliminar caracteres especiales
+document.addEventListener('DOMContentLoaded', function() {
+    const textInput = document.querySelector('.text-input');
+
+    textInput.addEventListener('input', function(e) {
+        let texto = this.value;
+        
+        // Reemplazar 'ñ' por 'n'
+        texto = texto.replace(/ñ/g, 'n');
+        
+        // Eliminar acentos de las vocales
+        texto = texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        
+        // Eliminar signos de puntuación y números
+        texto = texto.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()¿¡0-9"'´`]/g, '');
+        
+        // Actualizar el valor del textarea
+        this.value = texto;
+    });
+});
+
+// Encriptar
 encriptarBtn.addEventListener('click', () => {
-    const texto = textoInput.value;
+    const texto = textoInput.value.toLowerCase();
     if (texto === '') {
         alert('Ingrese el texto que desea encriptar')
         return;
@@ -84,8 +105,9 @@ encriptarBtn.addEventListener('click', () => {
     resultado.value = encriptarTexto(texto);
 });
 
+// Desencriptar
 desencriptarBtn.addEventListener('click', () => {
-    const texto = textoInput.value;
+    const texto = textoInput.value.toLowerCase();
     if (texto === '') {
         alert('Ingrese el texto que desea desencriptar')
         return;
@@ -100,6 +122,7 @@ desencriptarBtn.addEventListener('click', () => {
     resultado.value = desencriptarTexto(texto);
 });
 
+// Copiar
 document.addEventListener('DOMContentLoaded', function() {
     // ajustar el textarea de input
     textoInput.addEventListener('input', function() {
@@ -122,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 aviso.style.transform = 'translateX(-50%)'; // Centrar horizontalmente
                 aviso.style.backgroundColor = '#4CAF50'; // Verde para éxito
                 aviso.style.color = 'white';
-                aviso.style.padding = '10px 20px';
+                aviso.style.padding = '15px 30px';
                 aviso.style.borderRadius = '5px';
                 aviso.style.zIndex = '1000'; // Asegurar que esté encima de otros elementos
 
