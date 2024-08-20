@@ -67,12 +67,15 @@ function alinearTextStart() {
     }
 }
 
-// Funcion para eliminar caracteres especiales
+// Funcion para eliminar caracteres especiales y convertir a minúsculas
 document.addEventListener('DOMContentLoaded', function() {
     const textInput = document.querySelector('.text-input');
 
     textInput.addEventListener('input', function(e) {
         let texto = this.value;
+
+        // Convertir todo a minúsculas
+        texto = texto.toLowerCase();
         
         // Reemplazar 'ñ' por 'n'
         texto = texto.replace(/ñ/g, 'n');
