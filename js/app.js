@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
         texto = texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
         
         // Eliminar signos de puntuación y números
-        texto = texto.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()¿?¡0-9"'´`]/g, '');
+        texto = texto.replace(/[.,\/#!$€£¥¢°¾¼½™®©%\^&\*;:{}\[\]=\-+<>_`~()¿?¡0-9"'´`]/g, '');
         
         // Actualizar el valor del textarea
         this.value = texto;
